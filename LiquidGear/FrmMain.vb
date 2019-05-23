@@ -205,6 +205,7 @@ Public Class FrmMain
     Private Sub BtnSave_Click(sender As Object, e As EventArgs) Handles BtnSave.Click
         Apply()
         Save(Current_Opened_File)
+        'Unable to save, error while saving
         MessageBox.Show("O arquivo foi alterado com sucesso!", "Feito", MessageBoxButtons.OK, MessageBoxIcon.Information)
     End Sub
     Private Sub Save(File_Name As String)
